@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Temperature</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="source.html">Source Code</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href="./buy-product.html">Thank You Buy-Product</a>
+            <a href="./convert-temp.html">Convert Temperature</a>
+            <a href="./catage.html">Conversion of cat age</a>
+            <a href="./lowercase.html">String Lowercase</a>
+          </div>
+        </li>
+        <li style="float: right;"><a class="active" href="#about">About</a></li>
+      </ul>
+    </div>
+    <div class="contents">
+      <h2>Convert Temperature</h2>
+
+      <button onclick="temp()">Klik untuk memasukkan Suhu Celcius</button>
+      <p id="demo"></p>
+
+      <script>
+        function temp() {
+
+          celciusToFahrenheit(prompt("Masukkan Suhu Celcius !"));
+
+          document.getElementById("demo").innerHTML = text;
+        }
+
+        function celciusStart(value) {
+          return value * (9 / 5);
+        }
+
+        function celciusToFahrenheit(celcius) {
+          return (text =
+            "Jika " +
+            celcius +
+            " Derajat Celcius maka sama dengan " +
+            (celciusStart(celcius) + 32) +
+            " Fahrenheit");
+        }
+      </script>
+    </div>
+  </body>
+</html>
